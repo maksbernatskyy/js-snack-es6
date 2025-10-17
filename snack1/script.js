@@ -37,6 +37,25 @@ const bikes = [
     },
 ]
 
+// Inizializzo la bici più leggera
+let bikeLite = bikes[0]
+
+// =============================================================
+// =============================================================
+
 /* Confrontare il peso delle bici per trovare la meno pesante */
+
+// Creazione ciclo per il confronto
+for (let i = 0; i < bikes.length; i++) {
+    const thisBike = bikes[i]
+    const thisWeight = bikes[i].peso
+    console.log(thisWeight)
+
+    if (thisWeight < bikeLite.peso) {
+        bikeLite = thisBike
+    }
+} 
+
+
 
 /* Mostrare a schermo la bici meno pesante */
