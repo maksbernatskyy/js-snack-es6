@@ -59,6 +59,7 @@ console.log(teams)
 /* Creazione array con dentro solo nomi e falli subiti delle squadre */
 
 const teamsAndFalls = []
+console.log(teamsAndFalls)
 
 // =======================================================================
 // =======================================================================
@@ -83,7 +84,12 @@ for (let i = 0; i < teams.length; i++) {
 
 
 for (let i = 0; i < teams.length; i++) {
+    const thisTeam = teams[i]
     for (let key in teams[i]) {
-        console.log(teams[i][key])
+        const thisElement = teams[i][key]
+
+        if (thisElement === thisTeam['nome'] || thisElement === thisTeam['falli subiti']) {
+            teamsAndFalls.push(thisElement)
+        }
     }
 }
