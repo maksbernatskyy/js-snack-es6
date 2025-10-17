@@ -21,7 +21,37 @@ function getRandomNumberr(min, max) {
 // =========================================================================
 // =========================================================================
 
-/* Creazione array con dentro le squadre di calcio come oggetti */ 
+/* Creazione array con dentro le squadre di calcio come oggetti */
+
+const teams = [
+    {
+        nome: 'Milan',
+        'punti fatti': 0,
+        'falli subiti': 0
+    },
+    {
+        nome: 'Dinamo Kiev',
+        'punti fatti': 0,
+        'falli subiti': 0
+    },
+    {
+        nome: 'Real Madrid',
+        'punti fatti': 0,
+        'falli subiti': 0
+    },
+    {
+        nome: 'Manchester City',
+        'punti fatti': 0,
+        'falli subiti': 0
+    },
+    {
+        nome: 'Bayern Monaco',
+        'punti fatti': 0,
+        'falli subiti': 0
+    },
+]
+
+console.log(teams)
 
 /* Generazione di numeri random per i falli subiti ed i punti fatti */
 
