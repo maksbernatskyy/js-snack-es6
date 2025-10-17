@@ -21,11 +21,11 @@ const bikes = [
     },
     {
         nome: 'Atala Clever',
-        peso: 8
+        peso: 12
     },
     {
         nome: 'Trek Allant+',
-        peso: 9
+        peso: 3
     },
     {
         nome: 'Bianchi Lupo',
@@ -56,6 +56,8 @@ for (let i = 0; i < bikes.length; i++) {
     }
 } 
 
-
+// ===============================================================
+// ===============================================================
 
 /* Mostrare a schermo la bici meno pesante */
+console.log(bikeLite)
