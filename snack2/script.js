@@ -14,7 +14,7 @@ Tools:
 /* Inizializzazione funzioni */
 
 // Funzione random
-function getRandomNumberr(min, max) {
+function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 
@@ -53,6 +53,20 @@ const teams = [
 
 console.log(teams)
 
+// =======================================================================
+// =======================================================================
+
 /* Generazione di numeri random per i falli subiti ed i punti fatti */
+
+for (let i = 0; i < teams.length; i++) {
+    const thisTeam = teams[i]
+
+    // Assegno valore ai punti fatti
+    thisTeam['punti fatti'] = getRandomNumber(30, 85)
+
+    // Assegno i falli subiti
+    thisTeam['falli subiti'] = getRandomNumber(100, 1000)
+
+}
 
 /* Creazione array con dentro solo nomi e falli subiti delle squadre */
