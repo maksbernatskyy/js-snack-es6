@@ -1,1 +1,9 @@
-console.log('It Works')
+/*
+Tools:
+
+- const / let
+- array
+- objects
+- for
+- if / else
+*/
