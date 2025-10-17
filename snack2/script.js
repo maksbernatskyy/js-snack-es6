@@ -86,7 +86,7 @@ for (let i = 0; i < teams.length; i++) {
 for (let i = 0; i < teams.length; i++) {
     const thisTeam = teams[i]
 
-    // Seleziono ogni proprietà dell'array
+    // Seleziono ogni proprietà del singolo oggetto dell'array
     for (let key in teams[i]) {
         const thisElement = teams[i][key]
 
