@@ -56,6 +56,13 @@ console.log(teams)
 // =======================================================================
 // =======================================================================
 
+/* Creazione array con dentro solo nomi e falli subiti delle squadre */
+
+const teamsAndFalls = []
+
+// =======================================================================
+// =======================================================================
+
 /* Generazione di numeri random per i falli subiti ed i punti fatti */
 
 for (let i = 0; i < teams.length; i++) {
@@ -69,4 +76,14 @@ for (let i = 0; i < teams.length; i++) {
 
 }
 
-/* Creazione array con dentro solo nomi e falli subiti delle squadre */
+// =======================================================================
+// =======================================================================
+
+/* Inserimento elementi nell'array dei nomi falli subiti delle squadre */
+
+
+for (let i = 0; i < teams.length; i++) {
+    for (let key in teams[i]) {
+        console.log(teams[i][key])
+    }
+}
