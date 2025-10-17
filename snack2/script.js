@@ -80,14 +80,17 @@ for (let i = 0; i < teams.length; i++) {
 // =======================================================================
 // =======================================================================
 
-/* Inserimento elementi nell'array dei nomi falli subiti delle squadre */
+/* Inserimento elementi nell'array dei nomi e falli subiti delle squadre */
 
-
+// Seleziono ogni oggetto dell'array
 for (let i = 0; i < teams.length; i++) {
     const thisTeam = teams[i]
+
+    // Seleziono ogni proprietà dell'array
     for (let key in teams[i]) {
         const thisElement = teams[i][key]
 
+        // Se la proprietà concide con una delle due richieste viene pushata nell'array vuoto
         if (thisElement === thisTeam['nome'] || thisElement === thisTeam['falli subiti']) {
             teamsAndFalls.push(thisElement)
         }
