@@ -25,11 +25,11 @@ const bikes = [
     },
     {
         nome: 'Trek Allant+',
-        peso: 3
+        peso: 30
     },
     {
         nome: 'Bianchi Lupo',
-        peso: 12
+        peso: 8
     },
     {
         nome: 'Scott Addict',
@@ -59,5 +59,10 @@ for (let i = 0; i < bikes.length; i++) {
 // ===============================================================
 // ===============================================================
 
+
 /* Mostrare a schermo la bici meno pesante */
-console.log(bikeLite)
+
+const nameBikeLite = bikeLite.nome
+const weightBikeLite = bikeLite.peso
+
+console.log(`La bici più leggera è la ${nameBikeLite} con un peso di ${weightBikeLite}kg`)
